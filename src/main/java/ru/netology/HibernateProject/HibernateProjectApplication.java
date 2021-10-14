@@ -9,5 +9,4 @@ public class HibernateProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HibernateProjectApplication.class, args);
 	}
-
 }
