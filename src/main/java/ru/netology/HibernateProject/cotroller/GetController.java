@@ -15,6 +15,12 @@ public class GetController {
         this.getService = getService;
     }
 
+    @GetMapping("/index")
+    public String indexPage () {
+        String greeting = "Hi there!";
+        return greeting;
+    }
+
     @GetMapping("/get-by-age")
     public List<Person> getByAgeWhereAgeSmallerThan(@RequestParam("age") int age) {
         List<Person> result = getService.getByAgeWhereAgeSmallerThan(age);
